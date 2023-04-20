@@ -26,7 +26,7 @@ To start the app, run the following command:
 docker-compose up
 ```
 
-This will start the containers and initialize the database. Once the containers are running, you can access the app at `http://localhost:3000`.
+This will start the containers and initialize the database. Once the containers are running, you can access the app at `http://localhost:8080`.
 
 ## Technologies Used
 
