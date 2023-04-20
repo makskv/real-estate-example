@@ -1,0 +1,70 @@
+.estate {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.estate__title {
+  font-size: 28px;
+}
+
+.estate__subtitle {
+  font-size: 20px;
+}
+
+.estate__gallery {
+  position: relative;
+  overflow: hidden;
+}
+
+.estate__gallery__list {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  transition: transform 0.4s ease;
+}
+
+.estate__gallery__item {
+  border-radius: 4px;
+}
+
+.estate__gallery__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  background-color: #edebeb;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  z-index: 1;
+}
+
+.estate__gallery__button:hover {
+  background-color: #d1d1d1;
+}
+
+.estate__gallery__button--left {
+  left: 12px;
+}
+
+.estate__gallery__button--right {
+  right: 12px;
+}
+
+.estate__gallery__button__icon {
+  display: flex;
+}
+
+.estate__gallery__button__icon--left {
+  transform: rotate(90deg);
+}
+
+.estate__gallery__button__icon--right {
+  transform: rotate(-90deg);
+}

@@ -1,0 +1,28 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #6c757d;
+  padding: 20px 20px;
+  z-index: 100;
+}
+
+.nav__logo {
+  height: 34px;
+  width: 70px;
+}
+
+.nav__button {
+  padding: 8px 20px;
+  background-color: #dee2e6;
+  color: #212529;
+  border-radius: 12px;
+  transition: background-color 0.25s ease;
+}
+
+.nav__button:hover {
+  background-color: #bfc3c7;
+}
