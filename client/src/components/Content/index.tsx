@@ -33,7 +33,11 @@ const Content = () => {
       {estates?.map((estate) => (
         <EstatePreview key={estate.id} {...estate} />
       ))}
-      {loading && <span className="content__loader"></span>}
+      {loading && (
+        <div className="content__loader__container">
+          <span className="content__loader"></span>
+        </div>
+      )}
       {error && <p>Error!</p>}
       {!allWasLoaded && <div ref={loader} />}
     </main>

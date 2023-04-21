@@ -3,7 +3,6 @@
   flex-direction: column;
   gap: 20px;
   padding: 95px 24px 0;
-  align-items: center;
 }
 
 .content__loader {
@@ -28,9 +27,9 @@
   animation: 1s spin linear infinite;
 }
 .content__loader:after {
-  color: #FF3D00;
+  color: #ff3d00;
   transform: rotateY(70deg);
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 
 @keyframes rotate {
@@ -54,27 +53,34 @@
 @keyframes spin {
   0%,
   100% {
-    box-shadow: .2em 0px 0 0px currentcolor;
+    box-shadow: 0.2em 0px 0 0px currentcolor;
   }
   12% {
-    box-shadow: .2em .2em 0 0 currentcolor;
+    box-shadow: 0.2em 0.2em 0 0 currentcolor;
   }
   25% {
-    box-shadow: 0 .2em 0 0px currentcolor;
+    box-shadow: 0 0.2em 0 0px currentcolor;
   }
   37% {
-    box-shadow: -.2em .2em 0 0 currentcolor;
+    box-shadow: -0.2em 0.2em 0 0 currentcolor;
   }
   50% {
-    box-shadow: -.2em 0 0 0 currentcolor;
+    box-shadow: -0.2em 0 0 0 currentcolor;
   }
   62% {
-    box-shadow: -.2em -.2em 0 0 currentcolor;
+    box-shadow: -0.2em -0.2em 0 0 currentcolor;
   }
   75% {
-    box-shadow: 0px -.2em 0 0 currentcolor;
+    box-shadow: 0px -0.2em 0 0 currentcolor;
   }
   87% {
-    box-shadow: .2em -.2em 0 0 currentcolor;
+    box-shadow: 0.2em -0.2em 0 0 currentcolor;
   }
+}
+
+.content__loader__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
